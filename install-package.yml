@@ -5,10 +5,10 @@
   tasks:
     - name: Download the Apache installer
       win_get_url:
-        url: 'http://download.anindya.com/apache/apache_2.4.2-x64-no-ssl.msi'
-        dest: 'C:\Users\Administrator\Downloads\apache_2.4.2-x64-no-ssl.msi'
+        url: 'https://download.microsoft.com/download/D/0/F/D0F9F1BD-9BE6-49E4-8729-4AAAFCAC20F9/gfwlivesetup.exe'
+        dest: 'C:\Users\Administrator\Downloads\gfwlivesetup.exe'
 
     - name: Install MSI
-      win_msi: 
-        path: 'C:\Users\Administrator\Downloads\apache_2.4.2-x64-no-ssl.msi'
+      win_package: 
+        path: 'C:\Users\Administrator\Downloads\gfwlivesetup.exe'
         state: present
