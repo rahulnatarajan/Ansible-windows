@@ -13,3 +13,4 @@
         path: 'C:\Users\Administrator\Downloads\ChromeSetup.exe'
         state: present
         product_id: Chrome
+        arguments: /install /passive /norestart
