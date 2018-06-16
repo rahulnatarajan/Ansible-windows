@@ -5,10 +5,10 @@
   tasks:
     - name: Download the Apache installer
       win_get_url:
-        url: 'http://mirror.cc.columbia.edu/pub/software/apache//httpd/binaries/win32/httpd-2.2.25-win32-x86-no_ssl.msi'
-        dest: 'C:\Users\Administrator\Downloads\httpd-2.2.25-win32-x86-no_ssl.msi'
+        url: 'http://dl.dropbox.com/u/62603799/apache/apache_2.4.2-x64-openssl-1.0.1c.msi'
+        dest: 'C:\Users\Administrator\Downloads\apache_2.4.2-x64-openssl-1.0.1c.msi'
 
     - name: Install MSI
       win_msi: 
-        path: 'C:\Users\Administrator\Downloads\httpd-2.2.25-win32-x86-no_ssl.msi'
+        path: 'C:\Users\Administrator\Downloads\apache_2.4.2-x64-openssl-1.0.1c.msi'
         state: present
