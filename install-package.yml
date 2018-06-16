@@ -5,10 +5,10 @@
   tasks:
     - name: Download the Apache installer
       win_get_url:
-        url: 'http://download.anindya.com/apache/apache_2.4.2-x64-openssl-1.0.1c.msi'
-        dest: 'C:\Users\Administrator\Downloads\apache_2.4.2-x64-openssl-1.0.1c.msi'
+        url: 'http://download.anindya.com/apache/apache_2.4.2-x64-no-ssl.msi'
+        dest: 'C:\Users\Administrator\Downloads\apache_2.4.2-x64-no-ssl.msi'
 
     - name: Install MSI
       win_msi: 
-        path: 'C:\Users\Administrator\Downloads\apache_2.4.2-x64-openssl-1.0.1c.msi'
+        path: 'C:\Users\Administrator\Downloads\apache_2.4.2-x64-no-ssl.msi'
         state: present
