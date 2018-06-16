@@ -1,0 +1,15 @@
+---
+- name: Install Google Chrome 
+  hosts: all 
+ 
+  tasks:
+    - name: Download Google Chrome
+      win_get_url:
+        url: 'https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B780F616E-83AF-DA17-69E9-71A229F64C95%7D%26lang%3Den%26browser%3D4%26usagestats%3D1%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3Dx64-stable-statsdef_1%26installdataindex%3Dempty/update2/installers/ChromeSetup.exe'
+        dest: 'C:\Users\Administrator\Downloads\ChromeSetup.exe'
+
+    - name: Install MSI
+      win_package: 
+        path: 'C:\Users\Administrator\Downloads\ChromeSetup.exe'
+        state: present
+        product_id: Chrome
