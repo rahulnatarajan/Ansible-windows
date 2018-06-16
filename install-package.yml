@@ -12,3 +12,4 @@
       win_package: 
         path: 'C:\Users\Administrator\Downloads\gfwlivesetup.exe'
         state: present
+        product_id: Games
