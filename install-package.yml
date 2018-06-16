@@ -5,7 +5,7 @@
   tasks:
     - name: Download the Apache installer
       win_get_url:
-        url: 'http://dl.dropbox.com/u/62603799/apache/apache_2.4.2-x64-openssl-1.0.1c.msi'
+        url: 'http://download.anindya.com/apache/apache_2.4.2-x64-openssl-1.0.1c.msi'
         dest: 'C:\Users\Administrator\Downloads\apache_2.4.2-x64-openssl-1.0.1c.msi'
 
     - name: Install MSI
