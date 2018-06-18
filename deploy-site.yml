@@ -7,5 +7,5 @@
   tasks:
     - name: Download simple web site to 'C:\inetpub\wwwroot\ansible.html'
       win_get_url:
-        url: 'https://raw.githubusercontent.com/thisdavejohnson/mywebapp/master/index.html'
+        url: 'https://s3-ap-southeast-1.amazonaws.com/scbdemo/index.html'
         dest: 'C:\inetpub\wwwroot\ansible.html'
