@@ -6,5 +6,5 @@
   gather_facts: false
   tasks:
     - name: Configure Wordpress
-      script: /var/lib/awx/projects/13__windows_project/files/wp-config.sh "{{ dbuser }}" "{{ dbpassword }}" "{{ dbhost }}" "{{ dbname }}"
+      script: /var/lib/awx/projects/_13__windows_project/files/wp-config.sh "{{ dbuser }}" "{{ dbpassword }}" "{{ dbhost }}" "{{ dbname }}"
       ignore_errors: yes
