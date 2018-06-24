@@ -10,8 +10,6 @@ find /var/www -type d -exec sudo chmod 2775 {} \;
 find /var/www -type f -exec sudo chmod 0664 {} \;
 aws s3 cp s3://scbdemo/wordpress/ wordpress/ --recursive
 cp -r wordpress/* /var/www/html/
-mkdir /var/www/html/blog
-cp -r wordpress/* /var/www/html/blog/
 sudo chown -R apache /var/www
 sudo chgrp -R apache /var/www
 sudo chmod 2775 /var/www
