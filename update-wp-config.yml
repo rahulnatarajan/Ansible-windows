@@ -1,0 +1,10 @@
+---
+- name: Update wp-config.php 
+  hosts: all 
+
+  gather_facts: false
+  tasks:
+    - name: Update wp-config.php
+      get_url:
+        url: 'https://s3-ap-southeast-1.amazonaws.com/scbdemo/php-config/wp-config.php'
+        dest: /var/www/html/
