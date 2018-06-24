@@ -8,3 +8,7 @@
       get_url:
         url: 'https://s3-ap-southeast-1.amazonaws.com/scbdemo/php-config/wp-config.php'
         dest: /var/www/html/
+    - name: Restart service httpd, in all cases
+      service:
+        name: httpd
+        state: restarted
