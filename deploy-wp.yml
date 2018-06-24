@@ -1,0 +1,10 @@
+---
+# This playbook installs wordpress on Amazon Linux
+
+- name: Install Wordpress
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Install Wordpress
+      script: /var/lib/awx/projects/13__windows_project/files/wp.sh
+      ignore_errors: yes
