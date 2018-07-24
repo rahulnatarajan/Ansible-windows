@@ -1,4 +1,5 @@
 #!/bin/bash
+# Added a New Comment
 sudo yum update -y
 sudo yum install -y httpd24 php70 mysql php70-mysqlnd
 sudo service httpd start
